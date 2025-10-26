@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <attr name="customViewStyle" format="reference" />
+
+    <style name="Theme.Practica7_2" parent="Theme.AppCompat.Light.DarkActionBar">
+        <item name="customViewStyle">@style/Widget_Practica7_2_CustomView</item>
+        
+        <item name="colorPrimary">@color/purple_500</item>
+        <item name="colorPrimaryDark">@color/purple_700</item>
+        <item name="colorAccent">@color/teal_200</item>
+    </style>
+
+    <style name="Widget_Practica7_2_CustomView">
+        <item name="imageSize">48dp</item>
+        <item name="dividerHeight">1dp</item>
+        <item name="contentPadding">16dp</item>
+        <item name="titleTextColor">@android:color/black</item>
+        <item name="subtitleTextColor">@android:color/darker_gray</item>
+        <item name="dividerVisible">true</item>
+        <item name="imageMarginStart">8dp</item>
+        <item name="titleMarginStart">16dp</item>
+    </style>
+
+    <style name="Widget_Practica7_2_CustomView_Compact" parent="Widget_Practica7_2_CustomView">
+        <item name="imageSize">32dp</item>
+        <item name="contentPadding">8dp</item>
+        <item name="imageMarginStart">4dp</item>
+        <item name="titleMarginStart">8dp</item>
+    </style>
+
+    <style name="Widget_Practica7_2_CustomView_Large" parent="Widget_Practica7_2_CustomView">
+        <item name="imageSize">64dp</item>
+        <item name="contentPadding">24dp</item>
+        <item name="imageMarginStart">16dp</item>
+        <item name="titleMarginStart">24dp</item>
+    </style>
+
+    <style name="Widget_Practica7_2_CustomView_NoDivider" parent="Widget_Practica7_2_CustomView">
+        <item name="dividerVisible">false</item>
+    </style>
+
+</resources>

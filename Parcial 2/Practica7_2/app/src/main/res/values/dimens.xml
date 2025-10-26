@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="custom_view_icon_size">48dp</dimen>
+    <dimen name="custom_view_divider_height">1dp</dimen>
+    <dimen name="custom_view_content_margin">16dp</dimen>
+</resources>
+

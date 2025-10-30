@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="6dp"
+    android:background="#859b8b">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="12dp"
+        android:background="#eafff4">
+
+        <TextView
+            android:id="@+id/txtTitulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mi Reproductor"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:textColor="#1b2e21"
+            android:gravity="center"/>
+
+        <ImageView
+            android:id="@+id/imgAlbumArt"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="8dp"
+            android:src="@drawable/song1"
+            android:scaleType="centerCrop"
+            android:contentDescription="Album Art"/>
+
+        <TextView
+            android:id="@+id/txtCancion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Have You Ever"
+            android:textSize="14sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginTop="8dp"/>
+
+        <TextView
+            android:id="@+id/txtArtista"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="mindfreakkk"
+            android:textSize="12sp"
+            android:textColor="@color/black"
+            android:gravity="center"
+            android:layout_marginTop="2dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginTop="12dp">
+
+            <ImageButton
+                android:id="@+id/btnPrevious"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@android:drawable/ic_media_previous"
+                android:background="@android:drawable/ic_media_previous"
+                android:backgroundTint="#859b8b"
+                android:contentDescription="Previous"
+                android:scaleType="fitCenter"
+                android:layout_marginEnd="4dp"/>
+
+            <ImageButton
+                android:id="@+id/btnPlay"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@android:drawable/ic_media_play"
+                android:background="@android:drawable/ic_media_play"
+                android:backgroundTint="#859b8b"
+                android:contentDescription="Play"
+                android:scaleType="fitCenter"
+                android:layout_marginEnd="4dp"/>
+
+            <ImageButton
+                android:id="@+id/btnPause"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@android:drawable/ic_media_pause"
+                android:background="@android:drawable/ic_media_pause"
+                android:backgroundTint="#859b8b"
+                android:contentDescription="Pause"
+                android:scaleType="fitCenter"
+                android:layout_marginEnd="4dp"/>
+
+            <ImageButton
+                android:id="@+id/btnStop"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@android:drawable/ic_menu_close_clear_cancel"
+                android:background="@android:drawable/ic_menu_close_clear_cancel"
+                android:backgroundTint="#eafff4"
+                android:contentDescription="Stop"
+                android:scaleType="fitCenter"
+                android:layout_marginEnd="4dp"/>
+
+            <ImageButton
+                android:id="@+id/btnNext"
+                android:layout_width="45dp"
+                android:layout_height="45dp"
+                android:src="@android:drawable/ic_media_next"
+                android:background="@android:drawable/ic_media_next"
+                android:backgroundTint="#859b8b"
+                android:contentDescription="Next"
+                android:scaleType="fitCenter"/>
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

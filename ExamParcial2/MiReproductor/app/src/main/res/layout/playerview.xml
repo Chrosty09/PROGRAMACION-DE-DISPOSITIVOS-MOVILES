@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d1ebdb">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#87ad91"
+        android:elevation="4dp"
+        android:paddingTop="45dp"
+        android:paddingBottom="16dp">
+
+        <TextView
+            android:id="@+id/nombreApp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Mi Reproductor"
+            android:textAlignment="center"
+            android:textColor="#1b2e21"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:paddingTop="8dp"
+            android:paddingBottom="8dp" />
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Lista de canciones -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#eafff4"
+                android:layout_margin="8dp"
+                android:elevation="2dp"
+                android:padding="8dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Lista de Reproducción"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    android:textColor="#517a6a"
+                    android:paddingBottom="8dp"
+                    android:paddingStart="8dp"
+                    android:paddingEnd="8dp" />
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/canciones"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:nestedScrollingEnabled="false" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#eafff4"
+                android:layout_margin="8dp"
+                android:elevation="2dp"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Reproduciendo Ahora"
+                    android:textSize="14sp"
+                    android:textStyle="bold"
+                    android:textColor="#517a6a"
+                    android:paddingBottom="12dp"
+                    android:textAlignment="center" />
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="300dp"
+                    android:layout_marginBottom="16dp"
+                    app:cardCornerRadius="12dp"
+                    app:cardElevation="4dp">
+
+                    <androidx.media3.ui.PlayerView
+                        android:id="@+id/player_view"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:keepScreenOn="true"
+                        app:default_artwork="@drawable/song1"
+                        app:show_buffering="when_playing"
+                        app:use_artwork="true" />
+                </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:id="@+id/tituloCancion"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Have You Ever"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textSize="22sp"
+                    android:textStyle="bold"
+                    android:textColor="#212121"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="4dp"
+                    android:maxLines="2"
+                    android:ellipsize="end" />
+
+                <TextView
+                    android:id="@+id/autor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="mindfreakkk"
+                    android:textAlignment="center"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:textColor="#757575"
+                    android:paddingBottom="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:gravity="center"
+                    android:paddingTop="8dp"
+                    android:paddingBottom="8dp">
+
+                    <Button
+                        android:id="@+id/previous"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@android:drawable/ic_media_previous"
+                        android:backgroundTint="#859b8b"
+                        style="?android:attr/borderlessButtonStyle" />
+
+                    <Button
+                        android:id="@+id/play"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@android:drawable/ic_media_play"
+                        android:backgroundTint="#859b8b"
+                        style="?android:attr/borderlessButtonStyle" />
+
+                    <Button
+                        android:id="@+id/pause"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@android:drawable/ic_media_pause"
+                        android:backgroundTint="#859b8b"
+                        style="?android:attr/borderlessButtonStyle" />
+
+                    <Button
+                        android:id="@+id/stop"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:layout_marginEnd="8dp"
+                        android:background="@android:drawable/ic_menu_close_clear_cancel"
+                        android:backgroundTint="#617768"
+                        style="?android:attr/borderlessButtonStyle" />
+
+                    <Button
+                        android:id="@+id/next"
+                        android:layout_width="60dp"
+                        android:layout_height="60dp"
+                        android:background="@android:drawable/ic_media_next"
+                        android:backgroundTint="#859b8b"
+                        style="?android:attr/borderlessButtonStyle" />
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

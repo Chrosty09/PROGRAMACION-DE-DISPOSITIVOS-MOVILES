@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">paint</string>
+    <string-array name="tools">
+        <item>Pluma libre</item>
+        <item>Punto</item>
+        <item>Linea</item>
+        <item>Rectangulo</item>
+        <item>Circulo</item>
+        <item>Ovalo</item>
+        <item>Arco</item>
+        <item>Texto</item>
+    </string-array>
+    <string name="save_success">Imagen guardada exitosamente</string>
+    <string name="save_error">Error al guardar la imagen</string>
+</resources>
